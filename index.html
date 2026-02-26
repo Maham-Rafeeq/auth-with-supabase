@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <section>
+        <div class="form-main">
+            <form action="#"  onsubmit="signup(this); return false">
+                <h1>Sign-Up</h1>
+                 <div class="input-box">
+              <input type="text" required>
+              <label>Name</label>
+                </div>
+                 <div class="input-box">
+              <input type="number" required>
+              <label>Age</label>
+                </div>
+                <div class="input-box">
+                    <span><i class="ri-mail-fill"></i></span>
+              <input type="email" name="email" required>
+              <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span><i class="ri-git-repository-private-fill"></i></span>
+              <input type="password" name="password" required>
+              <label>Password</label>
+                </div>
+                <div class="remember">
+                    <div class="remember-me">
+                        <label for="checkbox"> <input type="checkbox">Remember me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button type="submit">Sign-Up</button>
+                   <div class="forget-pass">
+                    <p>Already have an account <a href="./signin.html">Login</a></p>
+                   </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
