@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color:black;
+    color: #fff;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    background: url(./8710.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    background-color:transparent;
+    border: 2px solid  rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+.form-main form  h1{
+    text-align: center;
+    font-size:2.5rem;
+}
+.form-main form .input-box{
+    position: relative;
+    width: 310px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+.form-main form .input-box input{
+    width: 100%;
+    height: 50px;
+    /* padding: 20px 35px 5px 5px; */
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color:#fff;
+    transition: 0.1s;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: black !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color:#fff;
+    padding-bottom: 30px;
+}
+.input-box span{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+.input-box input:focus~label{
+    top: 0%;
+    padding: 0px;
+    background-color: none;
+}
+.remember-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+}
+.remember-me label{
+    display: flex;
+    gap: 5px;
+    color: #fff;
+}
+.remember-me a{
+    text-decoration: none;
+    color: #fff;
+}
+.remember button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+.forget-pass{
+    margin-top: 7px;
+    font-size: .9rem;
+    text-align: center;
+    color: #fff;
+}
+.forget-pass a{
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+}
+.forget-pass a:hover{
+    text-decoration: underline;
+}
+@media(max-width:400px){
+.form-main{
+width: 100%;
+border: none;   
+}
+}
