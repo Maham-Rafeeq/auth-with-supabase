@@ -53,6 +53,8 @@ section{
     font-size: 1rem;
     color:#fff;
     transition: 0.1s;
+   cursor: pointer;
+
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
@@ -66,7 +68,7 @@ input:-webkit-autofill {
     transform: translateY(-50%);
     font-size: 1rem;
     color:#fff;
-    padding-bottom: 30px;
+    pointer-events: none;
 }
 .input-box span{
     position: absolute;
